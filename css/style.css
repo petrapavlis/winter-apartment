@@ -1,0 +1,276 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+text: #292929
+grey-background: #e2e2e2
+light-grey-background: #f3f3f3
+brown: #997556
+brown:hover: #8e6d50
+
+Fonty
+font-family: 'DM Serif Display', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* ----- Custom styles - mobile first ----- */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #1f1e1e;
+  text-rendering: optimizeLegibility;
+}
+
+/* Hlavni menu */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar .navbar-brand {
+  color: #997556;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+
+.navbar .navbar-brand:hover {
+  color: #8e6d50;
+}
+
+.navbar button {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  text-align: center;
+  color: #292929;
+  padding: 1rem;
+  border-top: solid white 1px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #8e6d50;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/jumbotron-snezka.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #e2e2e2;
+  color: white;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+.lead {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-right: 15px;
+}
+
+.lead {
+  font-size: 1.5rem;
+  padding-right: 15px;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 45px;
+}
+
+h3 {
+  color: #997556;
+}
+
+.title {
+  position: absolute;
+  bottom: 25%;
+}
+
+.btn-primary {
+  background-color: #f1760a;
+  border: solid #f1760a 1px;
+  border-radius: 0rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 10%;
+  left: 6%;
+}
+
+.btn-primary:hover {
+  background-color: #e16e09;
+  border: solid#e16e09 1px;
+}
+
+.btn-text,
+.btn-text:hover {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Sekce */
+.sekce {
+  padding: 60px 0;
+}
+
+.gray {
+  background-color: #f3f3f3;
+}
+
+/* Fotogalerie */
+
+.foto {
+  /* fotky v galerii jsou zešedlé pomocí filtru */
+  filter: grayscale(1);
+  /* při změně hodnoty se bude hodnota animovat během 0,3 vteřiny */
+  transition: 0.3s;
+}
+
+.foto:hover {
+  /* při najetí myši nad fotku zredukuj filtr na 0 (tj. vrátí se do fotky barva) */
+  filter: grayscale(0);
+}
+
+/* ----- Custom styles - wider screens ----- */
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 1600px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #292929;
+  }
+
+  /* Hlavni menu */
+  .navbar {
+    position: fixed;
+    width: 88%;
+    max-width: 1600px;
+    z-index: 2;
+    margin-left: 6%;
+  }
+
+  .navbar .navbar-brand {
+    color: #997556;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #997556;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(../images/jumbotron-snezka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-color: #e2e2e2;
+    color: white;
+    height: 90vh;
+    position: relative;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  .lead {
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 0.1rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .lead {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 45px;
+  }
+
+  h3 {
+    color: #997556;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+  }
+
+  /* Sekce */
+  .sekce {
+    padding: 60px 0;
+  }
+
+  .grey {
+    background-color: #f3f3f3;
+  }
+
+  .radius-1 {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  /* Fotogalerie */
+
+  .foto {
+    /* fotky v galerii jsou zešedlé pomocí filtru */
+    filter: grayscale(1);
+    /* při změně hodnoty se bude hodnota animovat během 0,3 vteřiny */
+    transition: 0.3s;
+  }
+
+  .foto:hover {
+    /* při najetí myši nad fotku zredukuj filtr na 0 (tj. vrátí se do fotky barva) */
+    filter: grayscale(0);
+  }
+}

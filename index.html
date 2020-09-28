@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Winter Apartment</title>
+    <meta
+      name="description"
+      content="Ubytování v soukromí s výhledem na Vrchlabí a Krkonoše"
+    />
+    <!-- Bootstrap styly -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- moje CSS styly -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font DM Serif Display a Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Hlavni menu -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-0 px-0">
+      <a class="navbar-brand" href="#">Winter Apartment</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#mojeNavigace"
+        aria-controls="mojeNavigace"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mojeNavigace">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#ubytovani">Ubytování</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fotogalerie">Fotogalerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cenik">Ceník</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakt">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rezervace">Rezervace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cz-en">CZE-ENG</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container title">
+        <h1>Ubytování</h1>
+        <p class="lead">s výhledem na Vrchlabí a Krkonoše</p>
+      </div>
+      <button type="button" class="btn btn-primary btn-lg">
+        <a class="btn-text" href="rezervace">Rezervace</a>
+      </button>
+    </div>
+
+    <!-- Apartman -->
+    <section class="sekce">
+      <div class="container">
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-5">
+            <h2>Komfort a soukromí</h2>
+            <p>
+              Nabízíme ubytování v prostorném mezonetovém apartmánu v rodinném
+              domě z roku 1927. Najdete nás v klidné části Vrchlabí s výhledem
+              na město a okolní hory. Do centra přitom dojdete příjemnou
+              procházkou za 10 minut. Celý byt je nekuřácký.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="vybaveni">Vybavení apartmánu</a>
+            </button>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="images/cesta-ke-snezce.jpg"
+              alt="test"
+            />
+          </div>
+        </div>
+
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="images/cesta-ke-snezce.jpg"
+              alt="test"
+            />
+          </div>
+          <div class="col-md-5">
+            <h2>Zázemí základ pohody</h2>
+            <p>
+              Do apartmánu vejdete vlastním vchodem. Přes předsíň a chodbu se
+              dostanete do útulné obytné kuchyně. Odtud můžete vyjít na terasu,
+              pokochat se výhledem na Vrchlabí a za pěkného počasí si dopřát
+              venkovní snídani. S obytnou kuchyní sousedí koupelna se sprchou a
+              WC.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="fotogalerie">Kde budu pobývat?</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-5">
+            <h2>Spánek jako v bavlnce</h2>
+            <p>
+              Schody do prvního patra vás zavedou do prostorné ložnice se čtyřmi
+              lůžky. Z jednoho okna uvidíte město pod sebou a z druhého
+              dohlédnete na nejbližší místní sjezdovku na Kněžickém Vrchu. Spí
+              se tu báječně a v kombinaci s čerstvým horským vzduchem budete
+              jako znovuzrození.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="fotogalerie">Kde budu spát?</a>
+            </button>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="images/cesta-ke-snezce.jpg"
+              alt="test"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vybavení -->
+    <section class="sekce gray">
+      <div class="container">
+        <h2 class="text-center">Vybavení apartmánu</h2>
+
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+
+          <div class="col-md-4 py-3">
+            <p class="text-center">
+              IKONA
+            </p>
+            <h3 class="text-center">Nadpis</h3>
+            <p class="text-center">
+              Text
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokalita a aktivity -->
+    <section class="sekce">
+      <div class="container">
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-5">
+            <h2>Vrchlabí a okolí</h2>
+            <p>
+              Kam se vrtnout ve městě a okolí.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="vybaveni">Tipy na místní aktivity</a>
+            </button>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="images/cesta-ke-snezce.jpg"
+              alt="test"
+            />
+          </div>
+        </div>
+
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="images/cesta-ke-snezce.jpg"
+              alt="test"
+            />
+          </div>
+          <div class="col-md-5">
+            <h2>Krkonoše</h2>
+            <p>
+              Kam se vrtnout ve městě a okolí.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="vybaveni">Tipy na místní aktivity</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-5">
+            <h3>Léto</h3>
+            <p>
+              Kam na výlet a co dělat v okolí...
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="letni-aktivity">Prozkoumat</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-6">
+            <h3>Zima</h3>
+            <p>
+              Kam na výlet a co dělat v okolí...
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a class="btn-text" href="zimni-aktivity">Prozkoumat</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sluzby -->
+    <section id="sluzby" class="sekce">
+      <div class="container">
+        <h2>Služby</h2>
+        <div class="row">
+          <ul class="col-md-6 col-lg-7 list-unstyled">
+            <li class="d-flex">
+              <img
+                class="mr-3 h-25"
+                src="images/sluzby-damske.svg"
+                width="100"
+                height="100"
+                alt="Dámské kadeřnictví"
+              />
+              <div class="flex-column">
+                <h3>Apartmán</h3>
+                <p>
+                  Nabízíme příjemné ubytování v soukromí. Apartmán s výhledem na
+                  Vrchlabí a Krkonoše vám poskytne komfortní zázemí během vašeho
+                  pobytu na horách. Buďte u nás jako doma!
+                </p>
+              </div>
+            </li>
+
+            <li class="d-flex">
+              <img
+                class="mr-3 h-25"
+                src="images/sluzby-panske.svg"
+                width="100"
+                height="100"
+                alt="Pánské kadeřnictví"
+              />
+              <div class="flex-column">
+                <h3>Apartmán</h3>
+                <p>
+                  Nabízíme příjemné ubytování v soukromí. Apartmán s výhledem na
+                  Vrchlabí a Krkonoše vám poskytne komfortní zázemí během vašeho
+                  pobytu na horách. Buďte u nás jako doma!
+                </p>
+              </div>
+            </li>
+
+            <li class="d-flex">
+              <img
+                class="mr-3 h-25"
+                src="images/sluzby-kosmetika.svg"
+                width="100"
+                height="100"
+                alt="Kosmetika"
+              />
+              <div class="flex-column">
+                <h3>Apartmán</h3>
+                <p>
+                  Nabízíme příjemné ubytování v soukromí. Apartmán s výhledem na
+                  Vrchlabí a Krkonoše vám poskytne komfortní zázemí během vašeho
+                  pobytu na horách. Buďte u nás jako doma!
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="col-md-6 col-lg-5">
+            <h3>Ceník</h3>
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>500&ndash;600&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>200&ndash;300&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>80&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>dle náročnosti</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>350&ndash;500&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>250&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>350&nbsp;Kč</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- konec #sluzby -->
+
+    <!-- Reference / Rekli o nas -->
+    <section id="reference" class="sekce gray">
+      <div class="container">
+        <h2>Řekli o nás</h2>
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <img
+              class="mr-3 rounded-circle"
+              width="100"
+              height="100"
+              src="images/reference-lucie.jpg"
+              alt="Lucie Nováková"
+            />
+            <p>
+              Kadeřnictví Scissors je v Praze prostě nejlepší. Vím to s
+              jistotou, protože normálně mám vlasy jako dikobraz a po ostřihání
+              vypadám vždy jako supermodelka.<br />
+              <em>&mdash; Lucie Nováková</em>
+            </p>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <img
+              class="mr-3 rounded-circle"
+              width="100"
+              height="100"
+              src="images/reference-klotilda.jpg"
+              alt="Klotilda Marnotratná"
+            />
+            <p>
+              Salón jsem doposud navštívila dvakrát a vždy jsem byla maximálně
+              spokojena s přístupem, prostředím, službami. Děkuji.<br />
+              <em>&mdash; Klotilda Marnotratná</em>
+            </p>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <img
+              class="mr-3 rounded-circle"
+              width="100"
+              height="100"
+              src="images/reference-jana.jpg"
+              alt="Jana Vostrá"
+            />
+            <p>
+              Helena je mojí kadeřnicí už několik let a dobrý kadeřník se
+              nemění! I přes profesionální služby vás příjemně překvapí velmi
+              dostupná cena.<br />
+              <em>&mdash; Jana Vostrá</em>
+            </p>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <img
+              class="mr-3 rounded-circle"
+              width="100"
+              height="100"
+              src="images/reference-libor.jpg"
+              alt="Libor Kohout"
+            />
+            <p>
+              Bez čekání, za 30 minut, super ostříhán. Vracím se pravidelně a
+              rád.<br />
+              <em>&mdash; Libor Kohout</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- konec #reference -->
+
+    <!-- Fotogalerie -->
+    <section id="fotogalerie" class="sekce pb-0">
+      <div class="container-fluid px-0">
+        <h2>Fotogalerie</h2>
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto01.jpg" alt="Foto 01" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto02.jpg" alt="Foto 02" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto03.jpg" alt="Foto 03" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto04.jpg" alt="Foto 04" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto05.jpg" alt="Foto 05" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto06.jpg" alt="Foto 06" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto07.jpg" alt="Foto 07" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto08.jpg" alt="Foto 08" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto09.jpg" alt="Foto 09" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto10.jpg" alt="Foto 10" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto11.jpg" alt="Foto 11" />
+          </div>
+          <div class="col-4 col-sm-3 col-lg-2">
+            <img class="img-fluid foto" src="images/foto12.jpg" alt="Foto 12" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="sekce gray">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <h3>Otevírací doba</h3>
+
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td>Pondělí&ndash;čtvrtek</td>
+                  <td>7.00&ndash;18.00</td>
+                </tr>
+                <tr>
+                  <td>Pátek</td>
+                  <td>10.00&ndash;19.00</td>
+                </tr>
+                <tr>
+                  <td>Sobota</td>
+                  <td>10.00&ndash;15.00</td>
+                </tr>
+                <tr>
+                  <td>Neděle</td>
+                  <td>zavřeno</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <h3>Kadeřnictví Scissors</h3>
+            <p>
+              Pouliční třída 13/2047<br />
+              Praha 1, 101 00
+            </p>
+
+            <p><a href="mailto:ahoj@scissors.cz">ahoj@scissors.cz</a></p>
+
+            <p>Telefonické objednávky:<br />+420 123 456 789</p>
+          </div>
+
+          <div class="col-md-12 col-lg-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20480.33164028703!2d14.39369546845803!3d50.08551071335367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x75209738d1d3b126!2sCharles+Bridge!5e0!3m2!1sen!2scz!4v1464236145887"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- konec #kontakt -->
+
+    <!-- Paticka -->
+    <div id="paticka" class="sekce">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <p>
+              &copy;2020, Czechitas - Petra Pavlisová v rámci Digitální akademie
+              web.
+            </p>
+            <p>
+              Photos from Flickr.com under Creative Commons license, courtesy of
+              <a href="https://www.flickr.com/photos/mike-owens/">Mike Owens</a
+              >,
+              <a href="https://www.flickr.com/photos/colourauthority/"
+                >Denise Mahoney</a
+              >,
+              <a href="https://www.flickr.com/photos/apachesenzala/"
+                >Apaché Senzala</a
+              >,
+              <a href="https://www.flickr.com/photos/rtdphotography/"
+                >Ray Dumas</a
+              >,
+              <a href="https://www.flickr.com/photos/remyhairweft/">Lucy He</a>,
+              <a href="https://www.flickr.com/photos/aliciacody/"
+                >Alicia Hotovec-Ellis</a
+              >,
+              <a href="https://www.flickr.com/photos/jdaykin/">Jerrz Daykin</a>,
+              <a href="https://www.flickr.com/photos/paladin27/">Paladin 27</a>
+            </p>
+          </div>
+
+          <div class="col-sm-4">
+            <ul class="list-inline text-right">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/czechitas">Facebook</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/czechitas">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- konec #paticka -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
