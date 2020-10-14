@@ -4,15 +4,18 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Winter Apartment</title>
+    <title>Winter Apartment | Vrchlabí</title>
     <meta
       name="description"
       content="Ubytování v soukromí s výhledem na Vrchlabí a Krkonoše"
     />
+
     <!-- Bootstrap styly -->
     <link rel="stylesheet" href="css/bootstrap.css" />
+
     <!-- moje CSS styly -->
     <link rel="stylesheet" href="css/style.css" />
+
     <!-- font DM Serif Display a Open Sans -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -21,57 +24,76 @@
   </head>
 
   <body>
-    <!-- Hlavni menu -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light py-0 px-0">
-      <a class="navbar-brand" href="#">Winter Apartment</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#mojeNavigace"
-        aria-controls="mojeNavigace"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md">
+        <!-- Navigation Logo -->
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="img-fluid"
+            src="images/snowflake_white.png"
+            alt=""
+            width="50"
+            loading="lazy"
+        /></a>
 
-      <div class="collapse navbar-collapse" id="mojeNavigace">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#ubytovani">Ubytování</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#fotogalerie">Fotogalerie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cenik">Ceník</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#kontakt">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#rezervace">Rezervace</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cz-en">CZE-ENG</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <!-- Navigation Toggler -->
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mojeNavigace"
+          aria-controls="mojeNavigace"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container title">
-        <h1>Ubytování</h1>
-        <p class="lead">s výhledem na Vrchlabí a Krkonoše</p>
-      </div>
-      <button type="button" class="btn btn-primary btn-lg">
-        <a class="btn-text" href="rezervace">Rezervace</a>
-      </button>
-    </div>
+        <!-- Navigation Main menu -->
+        <div class="collapse navbar-collapse" id="mojeNavigace">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#ubytovani">Ubytování</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lokalita">Lokalita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fotogalerie">Fotogalerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cenik">Ceník</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- Apartman -->
+      <!-- Navigation Logo -->
+      <a class="logo-png" href="index.html"
+        ><img
+          class="img-fluid"
+          src="images/snowflake_logo_white.png"
+          alt=""
+          width="150"
+          loading="lazy"
+      /></a>
+
+      <!-- Intro -->
+      <section class="intro">
+        <h1>Winter Apartment</h1>
+        <p class="lead">
+          Nabízíme ubytování v&nbsp;soukromí s&nbsp;výhledem na&nbsp;Vrchlabí
+          a&nbsp;Krkonoše. Buďte u&nbsp;nás jako doma!
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Rezervovat</a>
+      </section>
+    </header>
+
+    <!-- Ubytování -->
     <section class="sekce">
       <div class="container">
         <div class="row py-5 justify-content-center">
@@ -315,12 +337,11 @@
       <div class="container">
         <h2>Kontakt</h2>
         <div class="row">
-
           <div class="col-md-6">
             <h3>Winter Apartment Vrchlabí</h3>
             <p>
               Na Valech 304<br />
-              Hořejší Vrchlabí</br>
+              Hořejší Vrchlabí<br />
               543 00
             </p>
 
@@ -371,3 +392,13 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<!-- KONEC KÓDU - KONEC KÓDU - KONEC KÓDU - KONEC KÓDU - KONEC KÓDU -->
+<!--
+		//EU COOKIES code
+		function accept_cookies(){
+			$.get("/ajax.cookies.php", function(data){
+				$(".info-box").hide();
+			});
+		}	
+		//-->
