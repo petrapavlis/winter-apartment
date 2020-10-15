@@ -36,38 +36,23 @@ body {
   margin: 0;
 }
 
-/* ----- Header FOR MOBILE ----- */
-header {
-  background-color: #795548;
-  min-height: 90vh;
-}
-
 /* ----- Navigation FOR MOBILE ----- */
 .navbar {
-  background: #4b2c20;
+  background: #fff;
   position: relative;
-  padding: 10px 3%;
-}
-
-.navbar-brand {
-  color: #fff;
-  font-weight: bold;
-}
-
-.navbar-brand:hover {
-  color: #fff;
+  padding: 5px 3%;
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(93,64,55)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: rgb(255, 255, 255);
+  border-color: #5d4037;
 }
 
 .nav-link {
-  color: #e8f5e9;
+  color: #5d4037;
   font-weight: bold;
   text-transform: uppercase;
   margin: 5px 10px;
@@ -75,117 +60,50 @@ header {
 }
 
 .nav-link:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.logo-png {
-  display: none;
+  color: #ffd180;
 }
 
 /* ----- Intro FOR MOBILE ----- */
-.intro {
-  padding: 15% 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.intro-image {
+  background: url("../images/winter_apartment_summer.jpg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin: 0;
 }
 
-.intro * {
-  max-width: 280px;
-  text-align: center;
-}
-
-h1 {
-  font-family: "DM Serif Display", serif;
-  color: #fff;
-  font-size: 250%;
-  letter-spacing: 0.1rem;
-}
-
-.lead {
-  color: #fff;
-  font-size: 130%;
-  line-height: 2.5rem;
-  padding-top: 20px;
-}
-
-/* ----- Intro button FOR MOBILE ----- */
-.intro a {
-  background-color: #2e7d3200;
-  border: solid #fff 3px;
-  letter-spacing: 0.2rem;
+.intro-lead {
+  color: #5b3f36;
+  font-size: 200%;
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 40px auto;
-  padding: 15px;
-  width: 230px;
+  line-height: 3rem;
+  position: relative;
 }
 
-.intro a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  border: solid #fff 3px;
+.intro-lead::after {
+  background-color: #ffd180;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  height: 10px;
+  width: 100px;
+}
+
+.intro svg {
+  border: solid currentColor 3px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 
 /* ----- TABLET and wider ----- */
 @media (min-width: 768px) {
-  header {
-    background-color: #795548;
-    min-height: 100vh;
-    background: linear-gradient(
-        315deg,
-        rgba(90, 63, 55, 0.7),
-        rgba(90, 63, 55, 0.7)
-      ),
-      url("../images/winter_apartment_winter.jpg");
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-  }
-
-  /* ----- Navigation FOR TABLET ----- */
-  .navbar {
-    background: #d7ccc8;
-  }
-  .navbar-brand {
-    display: none;
-  }
-
-  .nav-link {
-    color: #4b2c20;
-  }
-
-  .nav-link:hover {
-    color: rgba(90, 63, 55, 0.7);
-  }
-
-  .logo-png {
-    display: inherit;
-    position: absolute;
-    top: 0;
-    left: 3%;
-    background: #795548;
-  }
-
   /* ----- Intro FOR TABLET ----- */
-  .intro {
-    padding: 100px 5%;
-  }
-
-  .intro * {
-    max-width: 650px;
-  }
-
-  h1 {
-    font-size: 450%;
-  }
-
-  .lead {
-    color: #fff;
-    font-size: 200%;
-    padding-top: 20px;
-    max-width: 600px;
-    line-height: 3rem;
+  .intro-image {
+    height: 65vh;
   }
 }
