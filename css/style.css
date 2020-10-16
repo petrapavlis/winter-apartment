@@ -99,6 +99,8 @@ body {
 }
 
 .equipment svg {
+  display: block;
+  margin: 0;
   color: #5d4037;
   /*border: solid #5d4037 3px;
   border-radius: 50%;*/
